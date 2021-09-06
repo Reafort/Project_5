@@ -1,0 +1,21 @@
+{
+  "name": "project_5",
+  "version": "1.0.0",
+  "description": "project_5 folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Reafort"
+  },
+  "keywords": [
+    "/"
+  ],
+  "author": "Project_5",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
