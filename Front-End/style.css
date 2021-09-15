@@ -81,6 +81,32 @@ div.flexContainer2 div {
     margin: 10px;
     font-size: 30px;
 }
+div.image1 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+div.image2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+div.image3 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+div.image4 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+div.image5 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 div.footerBanner{
     display: flex;
     justify-content: center;
