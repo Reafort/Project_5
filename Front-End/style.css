@@ -138,6 +138,27 @@ figure.card1 img, figure.card2 img, figure.card3 img, figure.card4 img, figure.c
  figure.card5 img {
      height: 230px;
  }
+ figure.card1-secondPage, figure.card2-secondPage, figure.card3-secondPage, figure.card4-secondPage, figure.card5-secondPage {
+    position: relative;
+    height: 100%;
+    width: 41em;
+    background-color:#F2E8F2;
+    border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+  }
+figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPage img, figure.card4-secondPage img, figure.card5-secondPage img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+ }
+ div.singleProduct {
+     display: flex;
+     justify-content: center;
+ }
  figcaption {
      display: flex;
      justify-content: center;
@@ -159,12 +180,35 @@ figure.card1 img, figure.card2 img, figure.card3 img, figure.card4 img, figure.c
     position: absolute;
     top: 1px;
     right: 1px;
-    font-size: 20px;
+    font-size: 2em;
+    width:2.8em;
     font-weight: 900;
-    height: 30px;
-    width: 60px;
     border-top-right-radius: 1em;
  }
+ span.lenses {
+     padding-left: 8px;
+ }
+ div.single-items-addtoCart {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+ }
+ div.addtoCart {
+    background: white;
+     border: 1px solid #F2E8F2;;
+     padding-bottom: 1em;
+    padding-top: 15px;
+    padding-left: 2em;
+    width: 8em;
+    margin-left: 2em;
+    margin-top: 5px;
+ }
+div.single-items-addtoCart :hover {
+    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
+    transition: transform .5s ease;
+    transform: scale(1.5);
+    color: white;
+}
 footer.firstpageFooter {
     background: black;
     padding-bottom: 5em;
