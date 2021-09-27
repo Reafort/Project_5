@@ -47,11 +47,20 @@ h1.secondPage {
    padding-bottom: 1em;
     padding-top: 1.5em;
 }
+h1.fourthPage {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
 h2.firstPage {
     display: flex;
     justify-content: center;
     font-size: 25px;
     font-weight: 600;
+}
+h2.fourthPage {
+    margin-left: 2em;
+    color: white;
 }
  p.firstPage_P {
     padding-left: 2em;;
@@ -159,6 +168,9 @@ figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPag
      display: flex;
      justify-content: center;
  }
+ hr {
+     width: 80%;
+ }
  figcaption {
      display: flex;
      justify-content: center;
@@ -166,7 +178,7 @@ figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPag
     background-color: #F2E8F2;
     padding-bottom: 5px;
     padding-top: 6px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     border-bottom-right-radius: 2em;
     border-bottom-left-radius: 2em;
@@ -227,6 +239,10 @@ div.socialMedias ul li {
 }
 div.socialMedias ul li a img {
     height: 2.5em;
+}
+div.summaryOrder {
+    border: 1px solid #F2E8F2;
+    height: 350px;
 }
 
 
