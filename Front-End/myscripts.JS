@@ -27,6 +27,7 @@ var singleProduct = [
         },
 
     ]
+ 
 let search= window.location.search
 let params = new URLSearchParams(search)
 let productid = params.get('id')
@@ -59,9 +60,17 @@ data.lenses.forEach(element => {
 
 let button = document.getElementsByClassName('addtoCart')[0].addEventListener('click',()=>{
 
-    let products = []
-    products.push(data)
-localStorage.setItem('cart',JSON.stringify(products))
+    let cart = localStorage.getItem('cart');
+    if (cart != null ){
+        let products = JSON.parse(cart)
+        products.push(data)
+        localStorage.setItem('cart',JSON.stringify(products))
+    }else{
+        let products = []
+        products.push(data)
+        localStorage.setItem('cart',JSON.stringify(products))
+    }
+    
 })
 })
 

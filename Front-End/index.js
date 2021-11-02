@@ -1,9 +1,9 @@
 
 fetch('http://localhost:3000/api/cameras').then(res=>res.json()).then(data=>{
     
-    let lensesDiv = document.getElementsByClassName('flexContainer2')[0];
-    lensesDiv.innerHTML ="" ;
-        data.forEach(element => {
+    let addtoCart= document.getElementsByClassName('singleProduct')[0];
+    addtoCart.innerHTML ="" ;
+        data.cart(element => {
         lensesDiv.insertAdjacentHTML('beforeend',` 
         
         <figure class="card2">
@@ -17,3 +17,15 @@ fetch('http://localhost:3000/api/cameras').then(res=>res.json()).then(data=>{
         `)
     });
 })
+
+
+
+
+
+
+
+
+fetch('http://localhost:3000/api/cameras')
+.then(response => response.json())
+.then(cart=> renderAllCart(cart))
+
