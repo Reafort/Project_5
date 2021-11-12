@@ -1,22 +1,30 @@
+   
+       let cartDiv = document.getElementById('items')
 
-fetch('http://localhost:3000/api/cameras').then(res=>res.json()).then(data=>{
-    
-    let addtoCart= document.getElementsByClassName('singleProduct')[0];
-    addtoCart.innerHTML ="" ;
-        data.cart(element => {
-        lensesDiv.insertAdjacentHTML('beforeend',` 
+
+   let cart = localStorage.getItem('cart');
+   if (cart != null ){
+       cart = JSON.parse(cart)
+      
+   }
+
+
+
+    //cartDiv.innerHTML = " " ;
+        cart.forEach(element => {
+            cartDiv.insertAdjacentHTML('beforeend',` 
         
-        <figure class="card2">
-        <a href="single-product.html?id=${element._id}">
-        <img alt="vcam1" src="${element.imageUrl}">
-          <figcaption>${element.name}</figcaption>
+        <tr>
+        <td><img src="${element.imageUrl}" width = 50 height = 50/> </td>
+        <td>${element.name}</td>
+        <td> <input type="number"/> </td>
+        <td>${element.price}</td>
+        <td><button><i class="fa fa-trash"></i></button></td>
        
-    </a>
-</figure>
+</tr>
         
         `)
     });
-})
 
 
 
@@ -25,7 +33,8 @@ fetch('http://localhost:3000/api/cameras').then(res=>res.json()).then(data=>{
 
 
 
-fetch('http://localhost:3000/api/cameras')
-.then(response => response.json())
-.then(cart=> renderAllCart(cart))
+
+
+
+
 
