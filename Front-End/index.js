@@ -15,11 +15,11 @@
             cartDiv.insertAdjacentHTML('beforeend',` 
         
         <tr>
-        <td><img src="${element.imageUrl}" width = 50 height = 50/> </td>
+        <td><img src="${element.imageUrl}" width = 160px height = 150px /> </td>
         <td>${element.name}</td>
-        <td> <input type="number"/> </td>
+        <td> <input class="input-cart"type="number"/> </td>
         <td>${element.price}</td>
-        <td><button><i class="fa fa-trash"></i></button></td>
+        <td><button class="delete-btn"><i class="fa fa-trash"></i></button></td>
        
 </tr>
         
