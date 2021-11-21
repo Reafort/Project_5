@@ -1,8 +1,11 @@
 body {
     outline: 1px solid black;
-    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
+    background-color: #313131;
     font-family: 'Handlee', cursive;
     margin:unset;
+}
+a {
+    text-decoration: none;
 }
 header {
     display: flex;
@@ -70,7 +73,11 @@ h2.firstPage {
     font-weight: 600;
 }
 h2.thirdPage {
-    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    font-size: 32px;
+
 }
 h2.fourthPage {
     margin-left: 2em;
@@ -85,12 +92,16 @@ h3.firstPage {
     font-size: 25px;
     font-weight: 600;
 }
+
 h4.firstPage {
     background-color:#F2E8F2;
     display: flex;
     justify-content: center;
     font-weight: 600;
     font-size: 30px;
+    margin: 0px;
+    padding-top: 11px;
+    padding-bottom: 10px;
 }
 div.centered {
     display: flex;
@@ -139,6 +150,7 @@ button.products_btn {
 div.flexContainer2 {
     display: flex;
     justify-content: center;
+    background-color: #313131;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 2em;
@@ -146,7 +158,7 @@ div.flexContainer2 {
 div.flexContainer2 div {
     text-align: center;
     width: 300px;
-    height: 250px;
+    height: 270px;
     margin: 10px;
     font-size: 30px;
 }
@@ -154,7 +166,7 @@ figure.card1, figure.card2, figure.card3, figure.card4, figure.card5 {
     position: relative;
     height: 100%;
     width: 400px;
-    background-color:#F2E8F2;
+    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
     border-top-left-radius: 2em;
 	border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -174,7 +186,7 @@ figure.card1 img, figure.card2 img, figure.card3 img, figure.card4 img, figure.c
     position: relative;
     height: 100%;
     width: 41em;
-    background-color:#F2E8F2;
+    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
     border-top-left-radius: 2em;
 	border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -198,7 +210,8 @@ figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPag
      display: flex;
      justify-content: center;
      align-items: center;
-    background-color: #F2E8F2;
+     color: white;
+     background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
     padding-bottom: 5px;
     padding-top: 6px;
     font-size: 25px;
@@ -230,7 +243,7 @@ figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPag
  }
  div.addtoCart {
     background: white;
-     border: 1px solid #F2E8F2;;
+     border: 1px solid #F2E8F2;
      padding-bottom: 1em;
     padding-top: 15px;
     padding-left: 2em;
@@ -263,37 +276,128 @@ div.socialMedias ul li {
 div.socialMedias ul li a img {
     height: 2.5em;
 }
-div.cart-orders {
-    border: 1px solid white;
+div.cart-flexContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 100%;
+    padding-top: 1em;
+}
+
+div.cart-orders {
+    width: 45em;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
     padding-top: 1.5em;
-    background-color: #F2E8F2;
-    margin-left: 2em;
-    margin-right: 2em;
 }
 button.delete-btn {
+    border-radius: 25px;
     height: 3.2em;
     width: 3.5em;
     background-color: #FF2E2E;
     color: white;
     border: 1px solid #FF2E2E
 }
+div.checkoutandBack-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+
 i.fa.fa-trash {
     font-size: 25px;
+}
+div.back-btn {
+    margin-right: 1em;
+}
+button.fas.fa-long-arrow-alt-left {
+    width: 157px;
+     border-radius: 5px;
+    font-size: 20px;
+    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
+     display: flex;
+     justify-content: center;
+     height: 2.em;
+    font-size: 27px;
+     height: 38px;
+     margin-bottom:1em;
+}
+button.checkout {
+    width: 162px;
+    border-radius: 5px;
+    font-size: 24px;
+    background:linear-gradient(to right, #e38c0f,#af5da7,#8233c1);
+    display: flex;
+    justify-content: center;
+    height: 2.em;
+    font-size: 27px;
+    height: 38px;
+    margin-bottom: 1em;
 }
 input.input-cart {
     width: 60px;
     height: 30px;
 }
+
+ table {
+    width: 100% ;
+  }
  tr {
     font-size: 20px;
-    color: #8D228D;
+    color: white;
     font-weight: 900;
+    width: 25%;
  }
+  div.flex-cart {
+      padding-left: 1.2em;
+  }
 
-  
+  div.contact-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100;
+    margin-top: 5em;
+  }
+
+  div.contact-info {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    width: 46em;
+    height: 100%;
+  }
+  form.display {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    padding: 2em;
+}
+input.signForm {
+    width: 93%;
+    background-color: #F2E8F2;
+    color:black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form.display label {
+    color: white;
+}
 
 
+
+
+
+
+
+ 
 @media only screen and (min-width: 1000px) {
 	/* For desktop: */
 

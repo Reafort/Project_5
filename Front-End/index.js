@@ -15,7 +15,7 @@
             cartDiv.insertAdjacentHTML('beforeend',` 
         
         <tr>
-        <td><img src="${element.imageUrl}" width = 160px height = 150px /> </td>
+        <td><img src="${element.imageUrl}" width = 110px height = 90px /> </td>
         <td>${element.name}</td>
         <td> <input class="input-cart"type="number"/> </td>
         <td>${element.price}</td>
