@@ -1,100 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="Orinoco Vintage Cameras" name="Vintage Cameras">
-        <meta content="width=device-width", initial-scale=1.0,viewport-fit=cover" name="viewport">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script src="https://kit.fontawesome.com/4336cfbc43.js"></script>
-       
-        <title>Item in Cart</title>
-    </head>
-    <body>
-        <header>
-            <div class="top_banner">
-            <div class="orinoco_logo"><img alt="orinocologo" src="../JWDP5-master/images/logo.png">
-        </div>
-    </header>
- <div class="cart-and-form-container">
-    <h2 class="thirdPage">Cart Details</h2>
-<div class="cart-flexContainer">
-<div class="cart-orders">
-        <table class="shopping-cart">
-    <thead>
-        <div class="flex-cart">
-        <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-        </div>
-    </thead>
-    <tbody id="items">
-    </tbody>
-</table>
-</div>
-</div>
-
-<div class="contact-flex">
-<div class="contact-info">
-    <form class="display">
-     <label for="fname">First Name</label>
-      <input class="signForm" type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input class="signForm" type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-      <label for="email">Email</label>
-      <input class="signForm" type="text" placeholder="example@domain.com"> 
-
-      <label for="city">City</label>
-      <input class="signForm"type="text" placeholder="name of city"> 
-
-      <label for="address">Address</label>
-      <input class="signForm"type="text" placeholder="your address"> 
-
-    </form>
-  </div>
-  </div>
-
-<div class="checkoutandBack-btn">
-    <div class="back-btn">
-        <a href="index.html">
-        <button type="button" i class="fas fa-long-arrow-alt-left">Back</i></a></button></div>
-    
-    <div class="checkout-btn">
-        <a href="confimation.html">
-        <button type="button" class="checkout">Checkout <i class="fas fa-long-arrow-alt-right"></i></a></button>
-    </div>  
-    </div>
-</div>
-
-
-
-
-
-
-    <footer class="firstpageFooter">
-        <div class="footerBanner">Stay in the Loop</div>
-        <div class="socialMedias">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/"><img alt="facebook" src="/JWDP5-master/images/facebooklogo.png"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=en"><img alt="twitter" src="/JWDP5-master/images/Twitter-Logo.png"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/"><img alt="instagram" src="/JWDP5-master/images/instagram.png"></a>
-                </li>
-            </ul>
-            </div>
-
-            <script src="./index.js"></script>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<meta content="Orinoco Vintage Cameras" name="Vintage Cameras">
+	<meta content="width=device-width" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/4336cfbc43.js">
+	</script>
+	<title>Item in Cart</title>
+	<meta content="Orinoco Vintage Cameras" name="description">
+</head>
+<body>
+	<header>
+		<div class="top_banner">
+			<div class="orinoco_logo">
+				<a href="index.html"><img alt="orinocologo" src="../JWDP5-master/images/logo.png"></a>
+			</div>
+		</div>
+	</header>
+	<div class="cart-and-form-container">
+		<h2 class="thirdPage">Cart Details</h2>
+		<div class="cart-flexContainer">
+			<div id="empty">
+				Your Shopping Cart is Empty<i class="far fa-frown-open"></i>
+			</div>
+			<div class="cart-orders" id="notEmpty">
+				<div class="flex-cart"></div>
+				<table class="shopping-cart" id="list">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody id="items"></tbody>
+				</table>
+			</div>
+		</div>
+		<div class="contact-flex">
+			<div class="contact-info">
+				<h3 class="thirdPage">Billing Address</h3>
+				<form id="contactForm" name="contactForm">
+					<label for="fname">First Name</label> <input class="signForm" id="fname" name="firstname" placeholder="Your name.." required="" type="text"> <label for="lname">Last Name</label> <input class="signForm" id="lname" name="lastname" placeholder="Your last name.." required="" type="text"> <label for="email">Email</label> <input class="signForm" id="email" placeholder="example@domain.com" required="" type="email"> <label for="city">City</label> <input class="signForm" id="city" placeholder="name of city" required="" type="text"> <label for="address">Address</label> <input class="signForm" id="address" placeholder="your address" required="" type="text"><br>
+					<div class="submit-btn">
+						<button onclick="submitForm()" type="button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="firstpageFooter">
+		<div class="footerBanner">
+			Stay in the Loop
+		</div>
+		<div class="socialMedias">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/"><img alt="facebook" src="/JWDP5-master/images/facebooklogo.png"></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/?lang=en"><img alt="twitter" src="/JWDP5-master/images/Twitter-Logo.png"></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/"><img alt="instagram" src="/JWDP5-master/images/instagram.png"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<i class="far fa-copyright"></i><span>Rea Ricafort</span>
+		</div>
+		<script src="./index.js">
+		</script> 
+	</footer>
+</body>
 </html>

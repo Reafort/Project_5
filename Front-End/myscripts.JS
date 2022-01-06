@@ -36,6 +36,7 @@ let productid = params.get('id')
     
 let container = document.getElementsByClassName('flexContainer3')[0];
 
+
 container.innerHTML = `
 <div class="singleProduct">
 <figure class="card1-secondPage">
@@ -52,6 +53,9 @@ container.innerHTML = `
  </figure>
  </div>
  `
+
+
+ //adding Items to the cart //
 
 let lensesDiv = document.getElementById('lenses')
 data.lenses.forEach(element => {
@@ -74,7 +78,11 @@ let button = document.getElementsByClassName('addtoCart')[0].addEventListener('c
 })
 })
 
-//
+
+
+
+
+
 
 
 

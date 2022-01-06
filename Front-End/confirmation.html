@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="Orinoco Vintage Cameras" name="Vintage Cameras">
+	<meta content="width=device-width" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/4336cfbc43.js">
+	</script>
+	<title>Confirmation Page</title>
+	<meta content="Orinoco Vintage Cameras Confirmation Number" name="description">
+</head>
+<body>
+	<header>
+		<div class="top_banner">
+			<div class="orinoco_logo">
+				<a href="index.html"><img alt="orinocologo" src="../JWDP5-master/images/logo.png"></a>
+			</div>
+		</div>
+	</header>
+	<h1 class="fourthPage">Thank You For Your Purchase!</h1>
+	<div class="summary">
+		<div class="yourOrder">
+			<h2 class="fourthPage">Your Order Confirmation Number:</h2>
+		</div>
+		<div class="confirmationNumber">
+			<div class="summaryOrder"></div>
+		</div>
+	</div>
+	<footer class="firstpageFooter">
+		<div class="footerBanner">
+			Stay in the Loop
+		</div>
+		<div class="socialMedias">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/"><img alt="facebook" src="/JWDP5-master/images/facebooklogo.png"></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/?lang=en"><img alt="twitter" src="/JWDP5-master/images/Twitter-Logo.png"></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/"><img alt="instagram" src="/JWDP5-master/images/instagram.png"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<i class="far fa-copyright"></i><span>Rea Ricafort</span>
+		</div>
+	</footer>
+	<script>
+	       document.getElementsByClassName('summaryOrder')[0].innerText = localStorage.getItem('orderId')
+	   localStorage.clear();
+	</script> 
+</body>
+</html>
