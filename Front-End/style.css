@@ -218,7 +218,6 @@ figure.card1-secondPage img, figure.card2-secondPage img, figure.card3-secondPag
     top: 1px;
     right: 1px;
     font-size: 2em;
-    width:2.8em;
     font-weight: 900;
     border-top-right-radius: 1em;
  }
@@ -255,7 +254,7 @@ div.footerBanner{
     display: flex;
     justify-content: center;
     font-size: 25px;
-    margin-top: 6em;
+    margin-top: 13em;
     background-color:#F2E8F2;
 }
 div.socialMedias {
